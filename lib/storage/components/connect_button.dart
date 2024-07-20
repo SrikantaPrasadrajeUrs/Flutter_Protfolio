@@ -55,12 +55,12 @@ class ConnectButton extends StatelessWidget {
               reusableSizedBox(context, .007, false, true),
                Icon(
                   myIcon,
-                color: Colors.lightGreenAccent,
+                color: Theme.of(context).iconTheme.color,
               ),
               reusableSizedBox(context, .007, false, true),
               Text(
                 text,
-                style: GoogleFonts.roboto(fontSize: 16, color: Colors.white),
+                style: Theme.of(context).textTheme.bodySmall,
               ),
               reusableSizedBox(context, .007, false, true),
             ],

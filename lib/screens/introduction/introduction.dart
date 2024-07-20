@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gap/gap.dart';
 import 'package:srikanta_protfolio/storage/components/connect_button.dart';
 import 'package:srikanta_protfolio/storage/components/my_description.dart';
+import 'package:srikanta_protfolio/storage/components/social_media.dart';
 import 'package:srikanta_protfolio/storage/constants.dart';
 import 'package:srikanta_protfolio/utils/animated_jumping_profile_bird.dart';
 import '../../models/responsive.dart';
@@ -45,7 +47,17 @@ class _IntroductionState extends State<Introduction>
         // laptop or tab view
             : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  const Gap(15),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Spacer(flex: 8,),
+                      SocialMedia(),
+                      Spacer(flex: 30,)
+                    ],
+                  ),
                   const Spacer(),
                    Column(
                     children: [
@@ -53,7 +65,7 @@ class _IntroductionState extends State<Introduction>
                       const MyDescription(),
                       reusableSizedBox(context, .03, true, false),
                       const ConnectButton(
-                        myIcon: FontAwesomeIcons.message,
+                        myIcon: FontAwesomeIcons.download,
                         text: "Resume",
                       ),
                       const Spacer(flex: 2,),

@@ -22,17 +22,14 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // naviagte to home
     Timer(const Duration(seconds: 6), () {
-      GoRouter.of(context).go(MyRouteConstants.goToHome);
+      context.go(MyRouteConstants.goToHome);
     });
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    Size s = MediaQuery.of(context).size;
-    print(s.width);
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

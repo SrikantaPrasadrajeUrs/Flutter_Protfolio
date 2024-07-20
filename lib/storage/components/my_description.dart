@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:srikanta_protfolio/storage/my_text_styles.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import '../constants.dart';
+import '../constants/my_enums.dart';
 
 class MyDescription extends StatefulWidget {
   const MyDescription({super.key});
@@ -46,13 +47,13 @@ class _MyDescriptionState extends State<MyDescription> {
         //     }),
         AnimatedTextKit(
           animatedTexts: [
-            ColorizeAnimatedText('Srikantaprasadraje Urs',
+            ColorizeAnimatedText(name,
                 textStyle: GoogleFonts.teko(color: Colors.white).copyWith(
                     fontSize: size.width <= 370 ? 40 : 50,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1),
                 colors: [Colors.blue, Colors.pink]),
-            ColorizeAnimatedText('Srikantaprasadraje Urs',
+            ColorizeAnimatedText(name,
                 textStyle: GoogleFonts.teko(color: Colors.white).copyWith(
                     fontSize: size.width <= 370 ? 40 : 50,
                     fontWeight: FontWeight.bold,
@@ -99,7 +100,7 @@ class _MyDescriptionState extends State<MyDescription> {
           animatedTexts: [
             TypewriterAnimatedText(
               'Flutter Developer',
-              textStyle: mWTS.copyWith(fontWeight: FontWeight.bold),
+              textStyle: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
               speed: const Duration(milliseconds: 700),
             ),
           ],

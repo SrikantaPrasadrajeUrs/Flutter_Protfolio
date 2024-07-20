@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:srikanta_protfolio/models/certificate_model.dart';
 import 'package:srikanta_protfolio/storage/constants.dart';
-
 import '../../models/get_x_controller/certification_controller.dart';
 import '../../models/responsive.dart';
 import '../../storage/my_text_styles.dart';
@@ -23,7 +22,7 @@ class CertificationStack extends StatelessWidget {
       child:AnimatedContainer(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.surface,
         ),
         padding: const EdgeInsets.all(20),
         duration: const Duration(milliseconds: 300),

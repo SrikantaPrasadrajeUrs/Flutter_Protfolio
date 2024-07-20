@@ -11,16 +11,16 @@ class NavigationTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(10),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            text,
-            style: smGTS.copyWith(
-                color: Theme.of(context).colorScheme.secondary,
-                fontWeight: FontWeight.bold),
-          ),
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+          text,
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+              color: Theme.of(context).colorScheme.secondary,
+              fontWeight: FontWeight.bold),
         ),
+      ),
     );
   }
 }

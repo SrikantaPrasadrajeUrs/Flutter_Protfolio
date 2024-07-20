@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gap/gap.dart';
+import 'package:lottie/lottie.dart';
 import 'package:srikanta_protfolio/storage/constants.dart';
 import '../../models/responsive.dart';
 import 'connect_button.dart';
@@ -22,14 +24,14 @@ class TopNavigationBar extends StatelessWidget {
                 width: size.width * .12,
                 child: Responsive.isMobile(context)
                     ? const MenuButton()
-                    : Image.asset('asset/images/triange_icon.png')),
+                    : LottieBuilder.asset('asset/coding-animation.json',width: 100,height: 100,)),
             if (!Responsive.isMobile(context))
               const Expanded(flex: 7, child: NavigationButtons()),
             const Spacer(),
             !Responsive.isMobile(context)
                 ? const Expanded(flex: 2, child: ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",),) //tablet
                 : const ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp"),
-            reusableSizedBox(context, .01, false, true)
+            const Gap(10)
           ],
         ),
         if (Responsive.isMobile(context)) const NavigationButtons()
