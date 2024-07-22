@@ -8,7 +8,7 @@ class SocialMediaIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon:Icon(icon),
+      icon:Icon(icon,size: Theme.of(context).iconTheme.size,),
       onPressed: func,
     );
   }

@@ -20,7 +20,7 @@ class MyThemes{
         ),
         iconTheme: const IconThemeData(
             color: Colors.white70,
-            size: 15,
+            size: 22,
         ),
         colorScheme: ColorScheme.light(
             background: Colors.grey.shade900,

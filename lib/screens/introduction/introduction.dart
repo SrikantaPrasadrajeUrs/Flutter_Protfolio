@@ -40,6 +40,7 @@ class _IntroductionState extends State<Introduction>
                   const ConnectButton(
                     myIcon: FontAwesomeIcons.message,
                     text: "Resume",
+                    color: null,
                   ),
                  const Spacer(flex: 7,),
                 ],
@@ -67,6 +68,7 @@ class _IntroductionState extends State<Introduction>
                       const ConnectButton(
                         myIcon: FontAwesomeIcons.download,
                         text: "Resume",
+                        color: null,
                       ),
                       const Spacer(flex: 2,),
                     ],

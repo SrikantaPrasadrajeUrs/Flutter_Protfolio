@@ -7,7 +7,8 @@ import 'package:url_launcher/url_launcher.dart';
 class ConnectButton extends StatelessWidget {
   final String text;
   final IconData myIcon;
-  const ConnectButton({super.key, required this.text, required this.myIcon});
+  final Color? color;
+  const ConnectButton({super.key, required this.text, required this.myIcon, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class ConnectButton extends StatelessWidget {
             launchUrl(Uri.parse('https://web.whatsapp.com/'));
           }
         }catch(e){
-          print(e);
+
         }
       },
       child: Container(
@@ -55,7 +56,8 @@ class ConnectButton extends StatelessWidget {
               reusableSizedBox(context, .007, false, true),
                Icon(
                   myIcon,
-                color: Theme.of(context).iconTheme.color,
+                color: color??Theme.of(context).iconTheme.color,
+                 size:22,
               ),
               reusableSizedBox(context, .007, false, true),
               Text(

@@ -1,10 +1,6 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:srikanta_protfolio/storage/constants.dart';
-
+import 'package:gap/gap.dart';
 import '../../models/responsive.dart';
-import '../../storage/my_text_styles.dart';
 import 'certification_grid.dart';
 
 class Certifications extends StatelessWidget {
@@ -12,27 +8,26 @@ class Certifications extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final duration=Duration(milliseconds:200);
     return  Scaffold(
       body: Column(
         children: [
-         Text("CERTIFICATIONS",style: mWTS.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
-          reusableSizedBox(context, .01, true, false),
+         Text("CERTIFICATIONS",style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
+          const Gap(10),
           Expanded(
             child: Responsive(
-              Desktop: CertificationGrid(
+              desktop: CertificationGrid(
                 crossAxisCount: 4,
                 ratio: 4,
               ),
-              Mobile: CertificationGrid(
+              mobile: CertificationGrid(
                 crossAxisCount: 1,
                 ratio: 1.7,
               ),
-              LargeMobile: CertificationGrid(
+              largeMobile: CertificationGrid(
                 crossAxisCount: 2,
                 ratio: 2,
               ),
-              Tablet: CertificationGrid(
+              tablet: CertificationGrid(
                 crossAxisCount: 2,
                 ratio: 1.4,
               ),

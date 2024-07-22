@@ -1,21 +1,26 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Responsive extends StatelessWidget{
-  final Widget Desktop;
-  final Widget Mobile;
-  final Widget Tablet;
-  final Widget LargeMobile;
-  const Responsive({
-    required this.Desktop,required this.Mobile,required this.Tablet,required this.LargeMobile
+  final Widget desktop;
+  final Widget mobile;
+  final Widget tablet;
+  final Widget largeMobile;
+  const Responsive({super.key,
+    required this.desktop,required this.mobile,required this.tablet,required this.largeMobile
   });
   @override
   Widget build(BuildContext context){
-    Size size=MediaQuery.of(context).size;
-     if(Responsive.isMobile(context)) return Mobile;
-    if(Responsive.isLargeMobile(context)) return LargeMobile;
-    else{
-      return Desktop;
+    MediaQueryData screenData=MediaQuery.of(context);
+    var orientation = screenData.orientation;
+     if(Responsive.isMobile(context)) {
+       return mobile;
+     }
+    if(Responsive.isLargeMobile(context)) {
+      return largeMobile;
+    } else {
+      return desktop;
     }
+
   }
   // for checking  mobile
   static bool isMobile(BuildContext context) {

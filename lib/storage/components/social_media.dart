@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:srikanta_protfolio/storage/components/social_media_column.dart';
 
 class SocialMedia extends StatelessWidget {
   const SocialMedia({super.key});
@@ -25,7 +26,7 @@ class SocialMedia extends StatelessWidget {
               color: Colors.white,
               margin:const EdgeInsets.symmetric(vertical: 10),
             ),
-
+            const SocialMediaColumn()
           ],
         );
       }, duration: const Duration(),
