@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "Pizza App",
+      "description": "Order Pizza Like a Pro! This Flutter app leverages BLOC architecture and Firebase Cloud Firestore to deliver a seamless pizza ordering experience.",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google auth",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/Flutter_Firebase_BLOC_Pizza_app/"
+    },
+    {
+      "name": "Reddit Clone",
+      "description": "Dive into Discussions with our Reddit Clone! Built with Flutter, Riverpod, and Firebase, this application replicates the popular Reddit platform, allowing for authentication, content sharing, and cloud storage.",
+      "technology": "Flutter . Dart . Riverpod . Firebase . Google and Facebook auth",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/reddit_clone_flutter_firebase"
+    },
+    {
+      "name": "Instagram Clone",
+      "description": "Share Your World with our Instagram Clone! This Flutter app empowers you to connect through shared images, chat with friends, and follow inspiring content, all powered by Riverpod and Firebase.",
+      "technology": "Flutter . Dart . Riverpod . Firebase",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/flutter_Insta_Clone"
+    },
+    {
+      "name": "Weather App",
+      "description": "Stay Ahead of the Weather! This Flutter app, built with the Bloc pattern, provides real-time weather forecasts for your current location and lets you explore weather conditions in any city.",
+      "technology": "Flutter . Dart . OpenWeatherMap API ",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs"
+    }
+  ]
+}

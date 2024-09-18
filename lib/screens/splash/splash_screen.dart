@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
 import 'package:srikanta_protfolio/models/responsive.dart';
 import 'package:srikanta_protfolio/navigation/routes_constant.dart';
@@ -20,7 +18,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // naviagte to home
+    // navigate to home
     Timer(const Duration(seconds: 6), () {
       context.go(MyRouteConstants.goToHome);
     });

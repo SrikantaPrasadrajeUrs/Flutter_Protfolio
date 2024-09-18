@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:lottie/lottie.dart';
-import 'package:srikanta_protfolio/storage/constants.dart';
 import '../../models/responsive.dart';
 import 'connect_button.dart';
 import 'menu_button.dart';
@@ -29,8 +27,8 @@ class TopNavigationBar extends StatelessWidget {
               const Expanded(flex: 7, child: NavigationButtons()),
             const Spacer(),
             !Responsive.isMobile(context)
-                ? const Expanded(flex: 2, child: ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,),) //tablet
-                : const ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,),
+                ? const Expanded(flex: 2, child: ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://web.whatsapp.com/",),) //tablet
+                : const ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://web.whatsapp.com/",),
             const Gap(10)
           ],
         ),

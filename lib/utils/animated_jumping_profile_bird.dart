@@ -32,8 +32,8 @@ class _AnimatedJumpingBirdState extends State<AnimatedJumpingBird>
         return Transform.translate(
           offset: Offset(0, animationController.value * 20),
           child: Container(
-            height: Responsive.isMobile(context)?200:300,
-            width: Responsive.isMobile(context)?200:300,
+            height: Responsive.isMobile(context)?200:280,
+            width: Responsive.isMobile(context)?200:280,
             decoration: BoxDecoration(
                 image: const DecorationImage(
                     image: AssetImage("asset/images/flutter_bird.png"),

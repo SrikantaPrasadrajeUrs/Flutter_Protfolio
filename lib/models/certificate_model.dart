@@ -38,13 +38,13 @@ class CertificationModel {
   // }
 
   Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['name'] = name;
-    _data['organization'] = organization;
-    _data['date'] = date;
-    _data['skills'] = skills;
-    _data['credential'] = credential;
-    return _data;
+    final data = <String, dynamic>{};
+    data['name'] = name;
+    data['organization'] = organization;
+    data['date'] = date;
+    data['skills'] = skills;
+    data['credential'] = credential;
+    return data;
   }
 }
 List<CertificationModel> certificateModelList=[

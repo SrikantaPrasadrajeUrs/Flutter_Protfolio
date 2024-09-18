@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:srikanta_protfolio/storage/constants.dart';
-
 import '../storage/constants/my_colors.dart';
 
 class AnimatedJumpingImage extends StatefulWidget {

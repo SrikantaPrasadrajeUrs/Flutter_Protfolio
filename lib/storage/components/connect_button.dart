@@ -1,6 +1,5 @@
-
+import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:srikanta_protfolio/storage/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -8,7 +7,8 @@ class ConnectButton extends StatelessWidget {
   final String text;
   final IconData myIcon;
   final Color? color;
-  const ConnectButton({super.key, required this.text, required this.myIcon, required this.color});
+  final String url;
+  const ConnectButton({super.key, required this.text, required this.myIcon, required this.color,required this.url});
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,11 @@ class ConnectButton extends StatelessWidget {
       onTap: ()async{
         // fetchCertificatesData();
         try {
-          if(await canLaunchUrl(Uri.parse('https://web.whatsapp.com/'))) {
-            launchUrl(Uri.parse('https://web.whatsapp.com/'));
+          if(await canLaunchUrl(Uri.parse(url))) {
+            await launchUrl(Uri.parse(url));
           }
         }catch(e){
-
+          log("Error opening link: ",error: e);
         }
       },
       child: Container(

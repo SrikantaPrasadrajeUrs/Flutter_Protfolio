@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:srikanta_protfolio/storage/my_text_styles.dart';
 
 class NavigationTextButton extends StatelessWidget {
   final VoidCallback onTap;

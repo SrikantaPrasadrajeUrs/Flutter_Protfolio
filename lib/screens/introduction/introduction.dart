@@ -1,11 +1,9 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:srikanta_protfolio/storage/components/connect_button.dart';
 import 'package:srikanta_protfolio/storage/components/my_description.dart';
 import 'package:srikanta_protfolio/storage/components/social_media.dart';
-import 'package:srikanta_protfolio/storage/constants.dart';
 import 'package:srikanta_protfolio/utils/animated_jumping_profile_bird.dart';
 import '../../models/responsive.dart';
 
@@ -28,30 +26,31 @@ class _IntroductionState extends State<Introduction>
         height: size.height,
         child: !Responsive.isLargeMobile(context)
         //mobile view
-            ? Column(
+            ? const Column(
                 children: [
-                  reusableSizedBox(context, .06, true, false),
+                  Spacer(flex: 1,),
                   //profile image - pulsating color
-                  const AnimatedJumpingBird(),
-                  reusableSizedBox(context, .1, true, false),
+                  AnimatedJumpingBird(),
+                  Spacer(flex: 3,),
                   // name - animation - typing
-                  const MyDescription(),
-                  reusableSizedBox(context, .03, true, false),
-                  const ConnectButton(
-                    myIcon: FontAwesomeIcons.message,
+                  MyDescription(),
+                  Spacer(),
+                  ConnectButton(
+                    myIcon: FontAwesomeIcons.download,
                     text: "Resume",
                     color: null,
+                    url: "https://drive.google.com/file/d/1364ceDP2wQbtTHBbYEjPiPpI9AvmqLrO/view?usp=sharing",
                   ),
-                 const Spacer(flex: 7,),
+                 Spacer(flex: 7,),
                 ],
               )
         // laptop or tab view
-            : Row(
+            : const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Gap(15),
-                  const Column(
+                  Gap(15),
+                  Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Spacer(flex: 8,),
@@ -59,22 +58,23 @@ class _IntroductionState extends State<Introduction>
                       Spacer(flex: 30,)
                     ],
                   ),
-                  const Spacer(),
+                  Spacer(),
                    Column(
                     children: [
-                      const Spacer(),
-                      const MyDescription(),
-                      reusableSizedBox(context, .03, true, false),
-                      const ConnectButton(
+                      Spacer(),
+                      MyDescription(),
+                      Gap(30),
+                      ConnectButton(
                         myIcon: FontAwesomeIcons.download,
                         text: "Resume",
                         color: null,
+                        url: "https://drive.google.com/file/d/1364ceDP2wQbtTHBbYEjPiPpI9AvmqLrO/view?usp=sharing",
                       ),
-                      const Spacer(flex: 2,),
+                      Spacer(flex: 2,),
                     ],
                   ),
-                  const Spacer(flex: 7,),
-                  const Column(
+                  Spacer(flex: 7,),
+                  Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Spacer(
@@ -86,7 +86,9 @@ class _IntroductionState extends State<Introduction>
                       ),
                     ],
                   ),
-                  reusableSizedBox(context, .05, false, true),
+                  Spacer(
+                    flex: 2,
+                  )
                 ],
               ),
             ),

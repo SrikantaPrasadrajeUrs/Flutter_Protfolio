@@ -10,8 +10,6 @@ class Responsive extends StatelessWidget{
   });
   @override
   Widget build(BuildContext context){
-    MediaQueryData screenData=MediaQuery.of(context);
-    var orientation = screenData.orientation;
      if(Responsive.isMobile(context)) {
        return mobile;
      }

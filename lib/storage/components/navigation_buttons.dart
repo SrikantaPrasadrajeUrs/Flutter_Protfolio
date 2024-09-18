@@ -20,7 +20,9 @@ class NavigationButtons extends StatelessWidget {
                 NavigationTextButton(onTap: () {
                   MovePage.pageController.animateToPage(0, duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
                 }, text: 'Home'),
-                if(Responsive.isLargeMobile(context))NavigationTextButton(onTap: () {}, text: 'About Me'),
+                if(Responsive.isLargeMobile(context))NavigationTextButton(onTap: () {
+                  Scaffold.of(context).openDrawer();
+                }, text: 'About Me'),
                 NavigationTextButton(onTap: () {
                   MovePage.pageController.animateToPage(1, duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
                 }, text: 'Projects'),
