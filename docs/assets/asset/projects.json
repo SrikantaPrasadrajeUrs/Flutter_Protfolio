@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name": "Pizza App",
+      "description": "Order Pizza Like a Pro! This Flutter app leverages BLOC architecture and Firebase Cloud Firestore to deliver a seamless pizza ordering experience.",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google auth",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/Flutter_Firebase_BLOC_Pizza_app/"
+    },
+    {
+      "name": "CommUnity App",
+      "description": "The app enables users to sign in using Google authentication, create and join communities, update or edit their profiles, and search for other groups or communities",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google auth",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/community_app_flutter"
+    },
+    {
+      "name": "Learnify",
+      "description": "App which make your learning process much more easier",
+      "technology": "Flutter . Dart . BLOC . Node.js",
+      "github_link": "https://github.com/SrikantaPrasadrajeUrs/learnify"
+    }
+  ]
+}

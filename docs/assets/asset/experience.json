@@ -1,0 +1,16 @@
+{
+  "total_exp_in_year": 1,
+  "experience": [
+    {
+      "company_name":"Spm global technologies",
+      "role": "Associate flutter developer",
+      "start": "12-FEB-2024",
+      "end": "present",
+      "project": "DealDox",
+      "duration": 1,
+      "skills": "Flutter . Dart . Google play console . App store connect . Google apis",
+      "google_play_store": "https://play.google.com/store/apps/details?id=com.dealdox.io.dealdox",
+      "app_store": "https://apps.apple.com/in/app/dealdox/id6737757798"
+    }
+  ]
+}
