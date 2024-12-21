@@ -26,26 +26,29 @@ class _IntroductionState extends State<Introduction>
         height: size.height,
         child: !Responsive.isLargeMobile(context)
         //mobile view
-            ? const Column(
+            ? Column(
                 children: [
-                  Spacer(flex: 1,),
+                  const Spacer(flex: 1,),
                   //profile image - pulsating color
-                  AnimatedJumpingBird(),
-                  Spacer(flex: 3,),
+                  // AnimatedJumpingBird(),
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(100),
+                      child: Image.asset('asset/images/selfie.jpeg',height: 300,)),
+                  const Spacer(flex: 1,),
                   // name - animation - typing
-                  MyDescription(),
-                  Spacer(),
-                  ConnectButton(
+                  const MyDescription(),
+                  const Spacer(),
+                  const ConnectButton(
                     myIcon: FontAwesomeIcons.download,
                     text: "Resume",
                     color: null,
-                    url: "https://drive.google.com/file/d/1364ceDP2wQbtTHBbYEjPiPpI9AvmqLrO/view?usp=sharing",
+                    url: "https://drive.google.com/file/d/14jVjw7D15nDMFA_KJpi5tHaTOq0LoLpw/view?usp=sharing",
                   ),
-                 Spacer(flex: 7,),
+                 const Spacer(flex: 7,),
                 ],
               )
         // laptop or tab view
-            : const Row(
+            : Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -58,8 +61,8 @@ class _IntroductionState extends State<Introduction>
                       Spacer(flex: 30,)
                     ],
                   ),
-                  Spacer(),
-                   Column(
+                  const Spacer(),
+                   const Column(
                     children: [
                       Spacer(),
                       MyDescription(),
@@ -68,25 +71,24 @@ class _IntroductionState extends State<Introduction>
                         myIcon: FontAwesomeIcons.download,
                         text: "Resume",
                         color: null,
-                        url: "https://drive.google.com/file/d/1364ceDP2wQbtTHBbYEjPiPpI9AvmqLrO/view?usp=sharing",
+                        url: "https://drive.google.com/file/d/14jVjw7D15nDMFA_KJpi5tHaTOq0LoLpw/view?usp=sharing",
                       ),
                       Spacer(flex: 2,),
                     ],
                   ),
-                  Spacer(flex: 7,),
+                  const Spacer(flex: 7,),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Spacer(
+                      const Spacer(
                         flex: 1,
                       ),
-                      AnimatedJumpingBird(),
-                      Spacer(
-                        flex: 2,
-                      ),
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: Image.asset('asset/images/selfie.jpeg',height: 250,width: 200,)),
+                      const Spacer(flex: 2,),
                     ],
                   ),
-                  Spacer(
+                  const Spacer(
                     flex: 2,
                   )
                 ],

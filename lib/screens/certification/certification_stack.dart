@@ -60,7 +60,9 @@ class CertificationStack extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
               Text("Organization :",style:smGTS.copyWith(fontWeight: FontWeight.bold)),
-              Text(certificateData['organization'],style:smGTS.copyWith(color: Colors.grey.shade300)),
+              SizedBox(
+                  width: 150,
+                  child: Text(certificateData['organization'],style:smGTS.copyWith(color: Colors.grey.shade300),overflow: TextOverflow.ellipsis,textAlign: TextAlign.right,)),
             ],),
             reusableSizedBox(context, .01, true, false),
             Row(

@@ -31,3 +31,13 @@ class ProjectsController extends GetxController{
     hovering[index]=value;
   }
 }
+
+class ExperienceController extends GetxController{
+  RxList<bool> hovering=[
+    false,
+    false,
+  ].obs;
+  onHover(int index,bool value){
+    hovering[index]=value;
+  }
+}
