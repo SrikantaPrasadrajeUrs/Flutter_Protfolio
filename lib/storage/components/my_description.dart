@@ -73,12 +73,12 @@ class _MyDescriptionState extends State<MyDescription> {
         // short description
         reusableSizedBox(context, .02, true, false),
         Text(
-          'This is the demo text This is the demo text',
+          'Crafting Solutions Where Code Meets Curiosity',
           style: TextStyle(
               fontSize: size.width <= 370 ? 15 : 20, color: Colors.white70),
         ),
         Text(
-          'This is the demo text ',
+          ' Flutter, Backend, and Infinite Learning.',
           style: TextStyle(
               fontSize: size.width <= 370 ? 15 : 20, color: Colors.white70),
         ),

@@ -12,10 +12,10 @@ class MySkills extends StatelessWidget {
         AnimatedLinearProgressIndicator(imgPath: "asset/icons/flutter.png", percentage: 88, title: "Flutter",imageType: ImageType.png,),
         AnimatedLinearProgressIndicator(imgPath: "asset/icons/dart.png", percentage: 90, title: "Dart",imageType: ImageType.png,),
         AnimatedLinearProgressIndicator(imgPath: "asset/icons/firebase.png", percentage: 60, title: "Firebase",imageType: ImageType.png,),
-        AnimatedLinearProgressIndicator(imgPath: "asset/svgs/reactNative.svg", percentage: 60, title: "ReactNative",imageType: ImageType.svg,),
+        // AnimatedLinearProgressIndicator(imgPath: "asset/svgs/reactNative.svg", percentage: 60, title: "ReactNative",imageType: ImageType.svg,),
         AnimatedLinearProgressIndicator(imgPath: "asset/icons/bloc.png", percentage: 80, title: "Bloc",imageType: ImageType.png,),
         AnimatedLinearProgressIndicator(imgPath: "asset/svgs/riverpod.png", percentage: 92, title: "RiverPod",imageType: ImageType.png,),
-        AnimatedLinearProgressIndicator(imgPath: "asset/svgs/spring.svg", percentage: 70, title: "SpringBoot",imageType: ImageType.svg,),
+        // AnimatedLinearProgressIndicator(imgPath: "asset/svgs/spring.svg", percentage: 70, title: "SpringBoot",imageType: ImageType.svg,),
         AnimatedLinearProgressIndicator(imgPath: "asset/svgs/nodejs.svg", percentage: 70, title: "Node.js",imageType: ImageType.svg,),
       ],
     );
