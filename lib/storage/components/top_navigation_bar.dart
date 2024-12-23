@@ -27,8 +27,8 @@ class TopNavigationBar extends StatelessWidget {
               const Expanded(flex: 7, child: NavigationButtons()),
             const Spacer(),
             !Responsive.isMobile(context)
-                ? const Expanded(flex: 2, child: ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://web.whatsapp.com/",),) //tablet
-                : const ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://web.whatsapp.com/",),
+                ? const Expanded(flex: 2, child: ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://wa.me/+917892200860",),) //tablet
+                : const ConnectButton(myIcon: FontAwesomeIcons.whatsapp,text: "Whatsapp",color: Colors.lightGreenAccent,url: "https://wa.me/+917892200860",),
             const Gap(10)
           ],
         ),

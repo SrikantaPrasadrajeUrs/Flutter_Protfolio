@@ -75,13 +75,13 @@ class _MyDescriptionState extends State<MyDescription> {
         Text(
           'Crafting Solutions Where Code Meets Curiosity',
           style: TextStyle(
-              fontSize: size.width <= 370 ? 15 : 20, color: Colors.white70),
+              fontSize: size.width <= 440 ? 13 : 20, color: Colors.white70),
         ),
-        Text(
-          ' Flutter, Backend, and Infinite Learning.',
-          style: TextStyle(
-              fontSize: size.width <= 370 ? 15 : 20, color: Colors.white70),
-        ),
+        // Text(
+        //   ' Flutter, Backend, and Infinite Learning.',
+        //   style: TextStyle(
+        //       fontSize: size.width <= 370 ? 15 : 20, color: Colors.white70),
+        // ),
         reusableSizedBox(context, .02, true, false),
         // StreamBuilder(
         //     stream: addText(),
