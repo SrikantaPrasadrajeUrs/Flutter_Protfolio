@@ -2,15 +2,23 @@
   "total_exp_in_year": 1,
   "experience": [
     {
-      "company_name":"Spm global technologies",
-      "role": "Associate flutter developer",
+      "company_name": "Spm Global Technologies",
+      "role": "Associate Flutter Developer",
       "start": "12-FEB-2024",
       "end": "present",
       "project": "DealDox",
       "duration": 1,
-      "skills": "Flutter . Dart . Google play console . App store connect . Google apis",
+      "skills": "Flutter . Dart . Google Play Console . App Store Connect . Google APIs",
       "google_play_store": "https://play.google.com/store/apps/details?id=com.dealdox.io.dealdox",
-      "app_store": "https://apps.apple.com/in/app/dealdox/id6737757798"
+      "app_store": "https://apps.apple.com/in/app/dealdox/id6737757798",
+      "responsibilities": [
+        "Developed a hybrid mobile application for Android and iOS using Flutter and Dart.",
+        "Integrated REST APIs and various third-party libraries to enhance application functionality.",
+        "Successfully integrated SpreadJS and Google Sheets libraries for advanced spreadsheet features.",
+        "Designed and built attractive mobile UIs with a focus on user experience and responsiveness.",
+        "Published the application on Google Play Console and App Store Connect, including configuration and maintenance.",
+        "Ensured proper configuration for app store compliance and updates."
+      ]
     }
   ]
 }

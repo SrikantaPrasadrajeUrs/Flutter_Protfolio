@@ -96,8 +96,42 @@ class ExperienceStack extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("duration :",style:smGTS.copyWith(fontWeight: FontWeight.bold)),
+                Text("Duration :",style:smGTS.copyWith(fontWeight: FontWeight.bold)),
                 Text(experienceData['start']+'-'+experienceData['end'],style:smGTS.copyWith(color: Colors.grey.shade300)),
+              ],
+            ),
+            reusableSizedBox(context, .01, true, false),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: Text("Responsibilities:", style: smGTS.copyWith(fontWeight: FontWeight.bold)),
+                ),
+                Expanded(
+                  flex: 5,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: List.generate(
+                      (experienceData['responsibilities'] as List<dynamic>).length,
+                          (index) => Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text("• ", style: TextStyle(color: Colors.grey)),
+                            Expanded(
+                              child: Text(
+                                experienceData['responsibilities'][index],
+                                style: smGTS.copyWith(color: Colors.grey.shade300),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ],

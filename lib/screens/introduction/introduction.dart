@@ -33,18 +33,18 @@ class _IntroductionState extends State<Introduction>
                   // AnimatedJumpingBird(),
                   ClipRRect(
                       borderRadius: BorderRadius.circular(100),
-                      child: Image.asset('asset/images/selfie.jpeg',height: 300,)),
+                      child: Image.asset('asset/images/selfie2.jpg',height: 250,)),
                   const Spacer(flex: 1,),
                   // name - animation - typing
                   const MyDescription(),
-                  const Spacer(),
+                  const Spacer(flex: 2,),
                   const ConnectButton(
-                    myIcon: FontAwesomeIcons.download,
+                    icon: FontAwesomeIcons.download,
                     text: "Resume",
                     color: null,
                     url: "https://drive.google.com/file/d/14jVjw7D15nDMFA_KJpi5tHaTOq0LoLpw/view?usp=sharing",
                   ),
-                 const Spacer(flex: 7,),
+                 const Spacer(flex: 6,),
                 ],
               )
         // laptop or tab view
@@ -68,7 +68,7 @@ class _IntroductionState extends State<Introduction>
                       MyDescription(),
                       Gap(30),
                       ConnectButton(
-                        myIcon: FontAwesomeIcons.download,
+                        icon: FontAwesomeIcons.download,
                         text: "Resume",
                         color: null,
                         url: "https://drive.google.com/file/d/14jVjw7D15nDMFA_KJpi5tHaTOq0LoLpw/view?usp=sharing",
@@ -84,7 +84,7 @@ class _IntroductionState extends State<Introduction>
                       ),
                       ClipRRect(
                           borderRadius: BorderRadius.circular(100),
-                          child: Image.asset('asset/images/selfie.jpeg',height: 250,width: 200,)),
+                          child: Image.asset('asset/images/selfie2.jpg',height: 300)),
                       const Spacer(flex: 2,),
                     ],
                   ),

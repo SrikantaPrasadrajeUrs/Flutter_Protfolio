@@ -1,6 +1,6 @@
 {
-    "name": "srikanta_protfolio",
-    "short_name": "srikanta_protfolio",
+    "name": "flutter_protfolio",
+    "short_name": "flutter_protfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
