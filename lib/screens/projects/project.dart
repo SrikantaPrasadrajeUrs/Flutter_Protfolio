@@ -23,7 +23,7 @@ class _ProjectsState extends State<Projects> {
     return  Column(
       children: [
         const Gap(10),
-        Text("PROJECTS",style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
+        Text("PROJECTS",style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
         Expanded(
           child: Responsive(
             desktop: ProjectGrid(

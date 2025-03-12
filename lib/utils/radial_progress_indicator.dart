@@ -7,8 +7,7 @@ class MyRadialProgressIndicator extends StatefulWidget {
   const MyRadialProgressIndicator({ super.key});
 
   @override
-  State<MyRadialProgressIndicator> createState() =>
-      _MyRadialProgressIndicatorState();
+  State<MyRadialProgressIndicator> createState() => _MyRadialProgressIndicatorState();
 }
 
 class _MyRadialProgressIndicatorState extends State<MyRadialProgressIndicator> {
@@ -17,7 +16,7 @@ class _MyRadialProgressIndicatorState extends State<MyRadialProgressIndicator> {
     Size size=MediaQuery.of(context).size;
     return TweenAnimationBuilder(
         tween: Tween<double>(begin: 0, end: 1),
-        duration: const Duration(seconds: 5),
+        duration: const Duration(milliseconds: 1500),
         builder: (context, value, child) {
           return  Column(
             children: [

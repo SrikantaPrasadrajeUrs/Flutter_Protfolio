@@ -11,9 +11,9 @@ class Certifications extends StatelessWidget {
     return  Scaffold(
       body: Column(
         children: [
-         Text("CERTIFICATIONS",style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
+         Text("CERTIFICATIONS",style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 1),),
           const Gap(10),
-          Expanded(
+          const Expanded(
             child: Responsive(
               desktop: CertificationGrid(
                 crossAxisCount: 4,

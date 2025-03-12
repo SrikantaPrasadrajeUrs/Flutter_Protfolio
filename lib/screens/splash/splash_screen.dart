@@ -19,8 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     // navigate to home
-    Timer(const Duration(seconds: 6), () {
-      context.go(MyRouteConstants.goToHome);
+    Timer(const Duration(milliseconds: 1500), () {
+      context.pushReplacement(MyRouteConstants.goToHome);
     });
     super.initState();
   }
@@ -32,10 +32,6 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //animation image
-            // Responsive.isDesktop(context)
-            //     ? const AnimatedJumpingImage(width: 500, height: 300)
-            //     :
             Responsive.isMobile(context)
                     ? const AnimatedJumpingImage(width: 100, height: 100)
                     : const AnimatedJumpingImage(width: 300, height: 250),

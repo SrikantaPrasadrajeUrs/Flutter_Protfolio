@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeProvider.themeData,
     );
-    // return Home();
   }
 }
 

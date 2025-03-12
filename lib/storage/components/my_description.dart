@@ -16,7 +16,6 @@ class _MyDescriptionState extends State<MyDescription> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     bool isLessThan500 = size.width<=501;
-    print(size.width);
     return Column(
       children: [
         AnimatedTextKit(

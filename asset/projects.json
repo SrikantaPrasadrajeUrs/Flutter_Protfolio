@@ -3,20 +3,32 @@
     {
       "name": "Pizza App",
       "description": "Order Pizza Like a Pro! This Flutter app leverages BLOC architecture and Firebase Cloud Firestore to deliver a seamless pizza ordering experience.",
-      "technology": "Flutter . Dart . BLOC . Firebase . Google auth",
-      "github_link": "https://github.com/SrikantaPrasadrajeUrs/Flutter_Firebase_BLOC_Pizza_app/"
+      "technology": "Flutter . Dart . BLOC . Firebase . Google Auth",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/Flutter_Firebase_BLOC_Pizza_app/",
+      "backend_link": null,
+      "video_link": null,
+      "image_link": "asset/images/pizza_app.jpg",
+      "post_links": []
     },
     {
       "name": "CommUnity App",
-      "description": "The app enables users to sign in using Google authentication, create and join communities, update or edit their profiles, and search for other groups or communities",
-      "technology": "Flutter . Dart . BLOC . Firebase . Google auth",
-      "github_link": "https://github.com/SrikantaPrasadrajeUrs/community_app_flutter"
+      "description": "The app enables users to sign in using Google authentication, create and join communities, update or edit their profiles, and search for other groups or communities.",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google Auth",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/community_app_flutter",
+      "backend_link": null,
+      "video_link": null,
+      "image_link": "asset/images/comm_unity.png",
+      "post_links": []
     },
     {
-      "name": "Learnify",
-      "description": "App which make your learning process much more easier",
-      "technology": "Flutter . Dart . BLOC . Node.js",
-      "github_link": "https://github.com/SrikantaPrasadrajeUrs/learnify"
+      "name": "Task Manager",
+      "description": "A powerful task management system built with Flutter for mobile and Node.js with PostgreSQL for the backend. Implements JWT authentication with access and refresh tokens for secure session management. Supports task creation, updates, and seamless offline-to-online synchronization",
+      "technology": "Flutter . Dart . BLOC . Node.js . TypeScript . PostgreSQL . Docker",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/task_manager_frontend",
+      "backend_link": "https://github.com/SrikantaPrasadrajeUrs/task_manager_backend",
+      "video_link": "asset/videos/2x_sound_tm.mp4",
+      "image_link": "asset/images/task_manager.jpg",
+      "post_links": []
     }
   ]
 }

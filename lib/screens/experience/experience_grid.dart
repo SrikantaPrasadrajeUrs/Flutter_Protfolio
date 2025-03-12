@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:srikanta_protfolio/screens/experience/experience_stack.dart';
-
 import '../../models/get_x_controller/controller.dart';
 import '../../storage/constants/helper_methods.dart';
 
 class ExperienceGrid extends StatefulWidget {
   final int crossAxisCount;
   final double ratio;
-  const ExperienceGrid({
-    super.key,
-    required this.crossAxisCount,
-    required this.ratio
-  });
+  const ExperienceGrid(
+      {super.key, required this.crossAxisCount, required this.ratio});
 
   @override
   State<ExperienceGrid> createState() => _ExperienceGridState();
@@ -33,38 +28,32 @@ class _ExperienceGridState extends State<ExperienceGrid> {
             return Text("Unable to Load Data, Reason: ${snapshot.error}");
           } else if (snapshot.hasData) {
             List<dynamic> experienceData = snapshot.data['experience'];
-            return MasonryGridView.builder(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                itemCount: experienceData.length,
-                gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: widget.crossAxisCount),
-                itemBuilder: (context, index) {
-                  return Obx(
-                        () => AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      margin: const EdgeInsets.symmetric(
-                          vertical: 15, horizontal: 15),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(30),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.blue.withOpacity(.8),
-                                offset: const Offset(-3, 0),
-                                blurRadius: controller.hovering[index] ? 10 : 5,
-                                spreadRadius: 2),
-                            BoxShadow(
-                                color: Colors.pink.withOpacity(.4),
-                                offset: const Offset(3, 0),
-                                blurRadius: controller.hovering[index] ? 10 : 5,
-                                spreadRadius: 2),
-                          ]),
-                      child: ExperienceStack(
+            return SingleChildScrollView(
+              child: Wrap(
+                  children: List.generate(
+                experienceData.length,
+                (index) {
+                  return Container(
+                    width: (MediaQuery.of(context).size.width /
+                            widget.crossAxisCount) -
+                        50,
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                    child: ExperienceCard(
                         index: index,
-                        experienceData: experienceData[index],
-                      ),
-                    ),
+                        companyName: experienceData[index]['company_name'],
+                        role: experienceData[index]['role'],
+                        start: experienceData[index]['start'],
+                        end: experienceData[index]['end'],
+                        projects: List<String>.from(experienceData[index]['projects']),
+                        skills: experienceData[index]['skills'],
+                        googlePlayStore: experienceData[index]['google_play_store'],
+                        appStore: experienceData[index]['app_store'],
+                        responsibilities: List<String>.from(experienceData[index]['responsibilities'])),
                   );
-                });
+                },
+              )),
+            );
           } else {
             return const Text("Some Error Occurred");
           }

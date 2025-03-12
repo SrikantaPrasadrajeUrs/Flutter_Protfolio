@@ -45,6 +45,12 @@ class _AnimatedLinearProgressIndicatorState extends State<AnimatedLinearProgress
   }
 
   @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
         tween: Tween<double>(begin: 0,end: widget.percentage/100), duration: const Duration(milliseconds: 1200),
