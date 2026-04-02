@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "name": "Biometric SDK",
+      "description": "A robust biometric SDK built using Java and Neurotechnology libraries for face recognition and biometric processing. Supports device integration, real-time face capture, configurable YAML-based settings, and license activation management. Designed for scalable deployment with support for multiple licensing modes including trial, serial, and internet-based activation.",
+      "technology": "Java . Neurotechnology SDK . Maven . YAML Configuration . Face Recognition . Finger Recognition . ID Capture . Realtime Capture Preview . Biometric Processing . Freelance",
+      "frontend_link": "N/A",
+      "backend_link": "PRIVATE",
+      "video_link": null,
+      "image_link": "asset/images/program-sdk-Biodoc.png",
+      "post_links": []
+    },
+    {
+      "name": "Document Scanner",
+      "description": "A powerful document scanning application built with Flutter, enabling users to capture, process, and upload documents efficiently. Features include real-time camera capture, . Designed with optimized state management and online usage.",
+      "technology": "Flutter . Dart . BLoC . Camera Integration . Local Storage . State Management (BLOC) . Freelance",
+      "frontend_link": "PRIVATE",
+      "backend_link": "N/A",
+      "video_link": null,
+      "image_link": "asset/images/adobe-scan-app.webp",
+      "post_links": []
+    },
+    {
+      "name": "Task Manager",
+      "description": "A powerful task management system built with Flutter for mobile and Node.js with PostgreSQL for the backend. Implements JWT authentication with access and refresh tokens for secure session management. Supports task creation, updates, and seamless offline-to-online synchronization",
+      "technology": "Flutter . Dart . BLOC . Node.js . TypeScript . PostgreSQL . Docker",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/task_manager_frontend",
+      "backend_link": "https://github.com/SrikantaPrasadrajeUrs/task_manager_backend",
+      "video_link": "asset/videos/2x_sound_tm.mp4",
+      "image_link": "asset/images/task_manager.jpg",
+      "post_links": []
+    },
+    {
+      "name": "Pizza App",
+      "description": "Order Pizza Like a Pro! This Flutter app leverages BLOC architecture and Firebase Cloud Firestore to deliver a seamless pizza ordering experience.",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google Auth",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/Flutter_Firebase_BLOC_Pizza_app/",
+      "backend_link": null,
+      "video_link": null,
+      "image_link": "asset/images/pizza_app.jpg",
+      "post_links": []
+    },
+    {
+      "name": "CommUnity App",
+      "description": "The app enables users to sign in using Google authentication, create and join communities, update or edit their profiles, and search for other groups or communities.",
+      "technology": "Flutter . Dart . BLOC . Firebase . Google Auth",
+      "frontend_link": "https://github.com/SrikantaPrasadrajeUrs/community_app_flutter",
+      "backend_link": null,
+      "video_link": null,
+      "image_link": "asset/images/comm_unity.png",
+      "post_links": []
+    }
+  ]
+}
